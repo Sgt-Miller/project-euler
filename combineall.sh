@@ -1,0 +1,1 @@
+cat *.py >> all.py
