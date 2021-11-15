@@ -1,0 +1,20 @@
+def fac(n):
+    if n == 1 or n == 0:
+        return 1
+    return n* fac(n-1)
+
+def yo(n):
+    t=n
+    sum=0
+    while t>0:
+        sum=sum+fac(t%10)
+        t=t//10
+    return sum == n
+
+i=10
+sum=0
+while True:
+    if yo(i):
+        print(i)
+        sum=sum+i
+    i=i+1
